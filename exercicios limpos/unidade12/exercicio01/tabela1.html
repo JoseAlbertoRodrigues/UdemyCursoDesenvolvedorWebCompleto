@@ -3,11 +3,64 @@
  
     <head>
         <meta charset="utf-8">
-        <title>Cursos HTML5 Essencial</title>
-    </head>
-    
-    <body>
+        <title>Cursos HTML5 Essencial - table</title>
 
+        <style>
+            body {
+                background-color: tomato;
+            }
+            table.example-one {
+                color: white;
+                width: 300px;
+                border: 1px solid black;
+            }
+
+            table.example-one td {
+                border: 1px dashed darkblue;
+                padding: 10px;
+            }
+
+            table.example-two {
+                width: 300px;
+                
+            }
+
+            table.example-two td, th {
+                background-color: #DDD;
+                padding: 8px;
+            }
+            th {
+                text-align: left;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h2>Example ono</h2>
+        <table class="example-one">
+            <tr>
+                <td>Brasil</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Argentina</td>
+                <td>2</td>
+            </tr>
+        </table>
+
+
+        <h2> Example two</h2>
+        <table class="example-two">
+            <tr>
+                <th>Brasil</th>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>Argentina</th>
+                <td>2</td>
+            </tr>
+        </table>
 	</body>
-    
+
 </html>
