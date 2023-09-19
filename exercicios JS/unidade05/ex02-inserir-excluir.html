@@ -2,8 +2,22 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            var salada = ["Uva","Banana","Pera"] ;
+            let salada = ["Uva","Banana","Pera"] ;
+
+            // adicionar no final
+            salada.push('Manga')
+            
+            // adicionar no inicio
+            salada.unshift('Laranja')
+
+            // excluir ultimo elemento
+            salada.pop()
+
+            // excluir ultimo primeiro
+            salada.shift()
+            
             console.log(salada);
+            console.log("Números de elementos: " + salada.length);
         </script>
     </head>
     <body>
