@@ -2,7 +2,18 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            
+            let nome = "Curso de Javascript essencial"
+            // let primeira = nome.substr(0, 5)
+            let primeira = ''
+            let i = 0
+            let letra = ''
+            while( letra != " " ){
+                letra = nome.charAt(i)
+                primeira = nome.substr(0, i)
+                i++
+            }
+
+            console.log(primeira)
         </script>
     </head>
     <body>

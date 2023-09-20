@@ -2,7 +2,20 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            
+            let frase = "José alberto rodrigues neto"
+            let primeira = frase.charAt(1)
+            //console.log(primeira)
+
+            let letra = ''
+            let primeiraPalavra = ''
+            let i = 0
+            while ( letra != ' ' ) {
+                letra = frase.charAt(i)
+                primeiraPalavra += letra
+                i++
+            }
+
+            console.log(primeiraPalavra)
         </script>
     </head>
     <body>
