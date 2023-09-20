@@ -6,20 +6,34 @@
     </head>
 
     <body>
+
+
     	<nav>
         	<a href="#">Brasil</a>
             <a href="#">Argentina</a>
             <a href="#">Uruguai</a>
             <a href="#">Chile</a>
+            <a href="#">Alemanha</a>
         </nav>
-        
+        <a href="#">Africa</a>
+
 		<!-- scripts -->
         <script src="jquery-3.2.1.min.js"></script>
-        <script>    
+        <script>
+            // Contando quantos elementos LINK(a) tem na página
+            //alert("Essa página contém " + $("nav a").length + " links")
+
+            // Maneira mais dinâmica depois que todos os elementos forem carregados
         	$( function() {
-				
-			})
-        </script>   
+                $("nav a").css("color", "white")
+                $("nav a").css("text-decoration", "none")
                 
+                $("nav a").css("background-color", "black").css("display", "block")
+
+                $("nav a:first").css("background-color", "red").css("display", "block")
+
+                $("nav a:contains('Alemanha')").css("background-color", "green")
+			})
+        </script>
     </body>
 </html>
