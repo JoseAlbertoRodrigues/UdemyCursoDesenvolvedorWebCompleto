@@ -2,8 +2,19 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            let agora = new Date()
+            let meses = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+            console.log('Ano ' + agora.getFullYear())
+            console.log('Dia ' + agora.getDate())
+            console.log('Mes ' + meses[agora.getMonth()])
 
-            
+            // data
+            console.log(agora.getDate() + '/' + meses[agora.getMonth()] + '/' + agora.getFullYear())
+
+
+            // aniversário
+            let aniversario = new Date(1994, 9, 27)
+            console.log(aniversario.getDay())
         </script>
     </head>
     <body>
