@@ -2,6 +2,50 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            let sorteio
+            let mega = new Array()
+
+            let i = 0
+            while(i < 6) {
+                sorteio = Math.ceil(Math.random() * 60)
+
+                // só serve para mim se esse número for um número novo, ou seja -1 para indexof
+                if (mega.indexOf(sorteio) < 0) {
+                    mega.push(sorteio)
+                    i++
+                }
+            }
+
+            // tenho que fazer essa função para ordenar porque o sort() trata os números como uma string
+            function ordenarNumeros(a, b) {
+                return a - b
+            }
+            mega.sort(ordenarNumeros)
+            console.log(mega)
+
+            /* ======================================= LOTO FÁCIL===========================================*/
+
+            let sorte
+            let lotoFacil = new Array()
+
+            let j = 0
+            while(j < 15) {
+                sorte = Math.ceil(Math.random() * 25)
+                
+                // para não haver repetições de números
+                if (lotoFacil.indexOf(sorte) < 0) {
+                    lotoFacil.push(sorte)
+                    j++
+                }
+            }
+
+            // ordenar os números
+            function orderNumber(a, b) {
+                return a - b
+            }
+
+            lotoFacil.sort(orderNumber)
+            console.log(lotoFacil)
 
         </script>
     </head>
