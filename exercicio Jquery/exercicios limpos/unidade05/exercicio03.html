@@ -22,18 +22,31 @@
 			 	background-repeat:no-repeat; margin-bottom:1px;
 				cursor:pointer;
 			}
-			
-			nav li:first-child 	{ background-image:url(imagem/futebol.png) } 
-			nav li:nth-child(2) { background-image:url(imagem/basquete.png) }
-					
-        </style>
-         
-        <script src="jquery-3.2.1.min.js"></script>
-        <script>		
-			$( function(e) { 	
 
-			});			
-		</script>   
+			nav li:first-child 	{ background-image:url(imagem/futebol.png) }
+			nav li:nth-child(2) { background-image:url(imagem/basquete.png) }
+
+			#primeira {
+				width: 100vw;
+				height: 100vh;
+				background-color: tomato;
+			}
+
+			#segunda {
+				width: 300px;
+				height: 500px;
+				background-color: orange;
+			}
+        </style>
+
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$( function(e) {
+				$("nav li:nth-child(2)").click( function(e) {
+					$("html, body").animate( {scrollTop: 600}, 1000) // 1000 = 1seg
+				})
+			});
+		</script>
     </head>
     <body>
 		<nav>
@@ -42,5 +55,8 @@
             	<li id="tela2"></li>
             </ul>
         </nav>
+
+		<div id="primeira"></div>
+		<div id="segunda"></div>
     </body>
 </html>
