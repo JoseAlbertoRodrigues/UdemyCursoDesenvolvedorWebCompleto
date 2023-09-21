@@ -12,19 +12,8 @@
 			$(function(e) {
                 $('#janela').hide()
 
-                //$('#mostrar').click(function(e) {
-                //    $('#janela').show()
-                //    // $('#janela').fadeToggle()
-                //})
-
-                //$('#esconder').click(function(e) {
-                //    //$('#janela').hide()
-                //    $('#janela').fadeOut()
-                //})
-                $('#mostrar').click( mostrarElemento)
-                $('#esconder').click( esconderElemento)
+                $('#mostrar').hover(mostrarElemento, esconderElemento)
             })
-
             // CÓDIGO MAIS LIMPO
             function mostrarElemento() {
                 $('#janela').show()
@@ -35,13 +24,12 @@
                 // $('#janela').hide()
                 $('#janela').fadeOut()
             }
-
 		</script>        
     </head>
 
     <body>
         <input type="button" id="mostrar" 	value="Mostrar" />
-        <input type="button" id="esconder" 	value="Esconder" />
+        <!-- <input type="button" id="esconder" 	value="Esconder" /> -->
         
         <div id="janela"></div>
     </body>
