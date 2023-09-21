@@ -10,7 +10,34 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
+            /*
+            function aplicarCorVermelho() {
+                $('#janela').css('background-color', 'red')
+            }
 
+            function aplicarCorVerde() {
+                $('#janela').css('background-color', 'green')
+            }
+            */
+
+            /*
+            function aplicarCor(e) {
+                $cor = e.data.cor
+                $('#janela').css('background-color', $cor)
+            }
+            */
+
+            function aplicarCor(e) {
+                $('#janela').css('background-color', e.data.cor)
+                $('#janela').css('width', e.data.largura)
+
+            }
+
+            $(function() {
+                $('#botaoazul').on('click', {cor: 'blue', largura: '250px'}, aplicarCor)
+                $('#botaovermelho').on('click', {cor: 'red', largura: '350px'}, aplicarCor)
+                $('#botaoverde').on('click', {cor: 'green', largura: '450px'}, aplicarCor)
+            })
 	 	</script>        
     </head>
     
