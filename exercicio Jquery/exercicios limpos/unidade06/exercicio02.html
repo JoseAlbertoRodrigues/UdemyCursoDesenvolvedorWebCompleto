@@ -9,7 +9,33 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			
+			$(function(e) {
+                $('#janela').hide()
+
+                //$('#mostrar').click(function(e) {
+                //    $('#janela').show()
+                //    // $('#janela').fadeToggle()
+                //})
+
+                //$('#esconder').click(function(e) {
+                //    //$('#janela').hide()
+                //    $('#janela').fadeOut()
+                //})
+
+                $('#mostrar').click( mostrarElemento)
+                $('#esconder').click( esconderElemento)
+
+                // CÓDIGO MAIS LIMPO
+                function mostrarElemento() {
+                    $('#janela').show()
+                    //$('#janela').fadeToggle()
+                }
+
+                function esconderElemento() {
+                    // $('#janela').hide()
+                    $('#janela').fadeOut()
+                }
+            })
 		</script>        
     </head>
 
