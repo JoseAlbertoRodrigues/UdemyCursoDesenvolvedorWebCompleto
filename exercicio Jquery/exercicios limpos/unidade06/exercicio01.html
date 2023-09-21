@@ -6,8 +6,29 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-					
-		</script>        
+            $(function() {
+                $('#cursohtml').click( function() {
+                    alert('clicou no botão html')
+                })
+
+                // $('#cursocss').on('mouseover', function() {
+                //     alert('clicou passou o mouse por cima do botão css')
+                // })
+
+                function mostrarMensagem() {
+                    alert('clicou passou o mouse por cima do botão css')
+                    // não mostra mais a mensagem depois da primeira vez
+                    $('#cursocss').off('mouseover', mostrarMensagem)
+                }
+
+                function mostrarMensagem2() {
+                    alert('clicou no botão css')
+                }
+
+                $('#cursocss').on('mouseover', mostrarMensagem)
+                $('#cursocss').on('click', mostrarMensagem2)
+            })
+		</script>
     </head>
 
     <body>
