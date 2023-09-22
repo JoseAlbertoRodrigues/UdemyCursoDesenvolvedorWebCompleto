@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Curso de Bootstrap - Rows</title>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=devide-width, initial-scale=1"> 
+        
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            p, h1 { text-align: center; font-family:Arial,sans-serif}
+            img.icone {max-width: 150px; margin:0 auto; display: block}
+
+            .exemploLinha2 {
+                height: 200px;
+            }
+
+            .red {
+                background-color: red;
+            }
+            .green {
+                background-color: green;
+            }
+            .orange {
+                background-color: orange;
+            }
+            .purple {
+                background-color: purple;
+            }
+            .tomato {
+                background-color: tomato;
+            }
+            .crimson {
+                background-color: crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icone" src="../img/icone_adobe_muse_grande.png">
+                    <h1>Adobe Muse</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula iaculis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula iaculis nibh</p>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icone" src="../img/icone_adobe_portfolio_grande.png">
+                    <h1>Adobe Portfolio</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula iaculis nibh</p>
+                </div>
+        
+                <div class="clearfix visible-sm-block"></div>
+                
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icone" src="../img/icone_aftereffects_grande.png">
+                    <h1>Adobe After Effects</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula iaculis nibh</p>
+                </div>
+        
+                <div class="clearfix visible-md-block"></div>
+        
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icone" src="../img/icone_css_grande.png">
+                    <h1>CSS 3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula iaculis nibh</p>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icone" src="../img/icone_html_grande.png">
+                    <h1>HTML 5</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula iaculis nibh</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icone" src="../img/icone_google_adwords_grande.png">
+                    <h1>Google Adwords</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula iaculis nibh</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="exemploLinha2 red col-sm-12 col-md-8 col-md-offset-2">
+                    <!-- de 12 parte, sobram 4, e para ficar centralizado eu uso o offset com
+                    a metade de 4 que é 2. -->
+                </div>
+                <!-- <div class="exemploLinha2 green col-sm-12 col-md-6"></div>
+                <div class="exemploLinha2 orange col-sm-12 col-md-6"></div>
+                <div class="exemploLinha2 purple col-sm-12 col-md-6"></div>
+                <div class="exemploLinha2 tomato col-sm-12 col-md-6"></div>
+                <div class="exemploLinha2 crimson col-sm-12 col-md-6"></div> -->
+            </div>
+        </div>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.js"></script>
+    </body>
+</html>
