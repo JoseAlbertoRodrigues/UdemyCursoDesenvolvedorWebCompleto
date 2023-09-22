@@ -4,7 +4,23 @@
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         <style>
-			#janela { position:absolute; height:200px; background-color:#069;  }
+
+            #principal {
+                position: absolute;
+                height: 200px;
+                clip: rect(0 200px 200px 0);
+            }
+            
+			#janela {
+                position: relative;
+                height: 200px;
+                top: 0;
+                left: 0;
+                /*background-color:#069;*/
+            }
+            #janela img {
+                float: left;
+            }
 		</style>
         
         <script src="jquery-3.2.1.min.js"></script>       
@@ -21,12 +37,14 @@
     </head>
 
     <body>
-        <div id="janela">
-            <img src="imagens/foto1.jpg" alt="" srcset="">
-            <img src="imagens/foto2.jpg" alt="" srcset="">
-            <img src="imagens/foto3.jpg" alt="" srcset="">
-            <img src="imagens/foto4.jpg" alt="" srcset="">
-            <img src="imagens/foto5.jpg" alt="" srcset="">
+        <div id="principal">
+            <div id="janela">
+                <img src="imagens/foto1.jpg" alt="" srcset="">
+                <img src="imagens/foto2.jpg" alt="" srcset="">
+                <img src="imagens/foto3.jpg" alt="" srcset="">
+                <img src="imagens/foto4.jpg" alt="" srcset="">
+                <img src="imagens/foto5.jpg" alt="" srcset="">
+            </div>
         </div>
     </body>
 
