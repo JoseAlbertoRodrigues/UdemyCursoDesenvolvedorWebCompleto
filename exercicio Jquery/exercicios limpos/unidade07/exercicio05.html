@@ -9,15 +9,24 @@
         
         <script src="jquery-3.2.1.min.js"></script>       
         <script>
+            // animação das fotos
+            function moverFotos() {
+                $('#janela').animate( {left: "-=200"}, 1000)
+            }
+
 			$( function() {
-	
+                setInterval(moverFotos, 2000)
 			});	
 		</script>        
     </head>
 
     <body>
         <div id="janela">
-
+            <img src="imagens/foto1.jpg" alt="" srcset="">
+            <img src="imagens/foto2.jpg" alt="" srcset="">
+            <img src="imagens/foto3.jpg" alt="" srcset="">
+            <img src="imagens/foto4.jpg" alt="" srcset="">
+            <img src="imagens/foto5.jpg" alt="" srcset="">
         </div>
     </body>
 
