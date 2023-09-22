@@ -21,13 +21,25 @@
             #janela img {
                 float: left;
             }
+
+            /* Isso vai ser para entender qual é o limite do meu left */
+            #info {
+                position: absolute;
+                top: 300px;
+            }
 		</style>
         
         <script src="jquery-3.2.1.min.js"></script>       
         <script>
             // animação das fotos
             function moverFotos() {
-                $('#janela').animate( {left: "-=200"}, 1000)
+                $('#janela').animate( {left: "-=200"}, 1000, function(e) {
+                    $('#info').html( $('#janela').position().left)
+
+                    if ( $('#janela').position().left == -1000 ){
+                        $('#janela').css('left', 0)
+                    }
+                })
             }
 
 			$( function() {
@@ -44,8 +56,11 @@
                 <img src="imagens/foto3.jpg" alt="" srcset="">
                 <img src="imagens/foto4.jpg" alt="" srcset="">
                 <img src="imagens/foto5.jpg" alt="" srcset="">
+                <img src="imagens/foto1.jpg" alt="" srcset="">
             </div>
         </div>
+
+        <div id="info"></div>
     </body>
 
 </html>
