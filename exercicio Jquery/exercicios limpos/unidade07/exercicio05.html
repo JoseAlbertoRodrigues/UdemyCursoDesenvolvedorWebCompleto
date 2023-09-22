@@ -31,21 +31,29 @@
         
         <script src="jquery-3.2.1.min.js"></script>       
         <script>
+            let limite
+
             // animação das fotos
             function moverFotos() {
                 $('#janela').animate( {left: "-=200"}, 1000, function(e) {
-                    $('#info').html( $('#janela').position().left)
+                    // não preciso usar mais: $('#info').html( $('#janela').position().left)
 
-                    if ( $('#janela').position().left == -1000 ){
+                    if ( $('#janela').position().left == limite ){
                         $('#janela').css('left', 0)
                     }
                 })
             }
 
-			$( function() {
+			$( function(e) {
+                limite = $('#janela img').length * $('#janela img').width() * -1
+                // alert(limite)
+
+                $('#janela').append('<img>')
+                $('#janela img:last').attr('src', 'imagens/foto1.jpg')
+
                 setInterval(moverFotos, 2000)
-			});	
-		</script>        
+			});
+		</script>
     </head>
 
     <body>
@@ -56,11 +64,11 @@
                 <img src="imagens/foto3.jpg" alt="" srcset="">
                 <img src="imagens/foto4.jpg" alt="" srcset="">
                 <img src="imagens/foto5.jpg" alt="" srcset="">
-                <img src="imagens/foto1.jpg" alt="" srcset="">
             </div>
         </div>
 
-        <div id="info"></div>
+        <!-- não preciso usar mais
+            <div id="info"></div> -->
     </body>
 
 </html>
