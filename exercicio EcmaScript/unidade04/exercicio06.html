@@ -3,8 +3,13 @@
         <title>Curso de EcmaScript 6.0</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
         <script type="text/babel">
-            
+            var citricas = ['Laranja', 'Tengerina', 'limão']
+            var rosacea = ['Maçã', 'Pêra', 'Marmelos', 'Damascos', 'Ameixas',  'cerejas', 'pêssegos', 'framboesas', 'nêsperas', 'morangos','amêndoas']
+            var salada = ['Banana', 'Uva', ...citricas, 'Mamão', ...rosacea, 'Abacate']
 
+            // ...citricas, ...rosacea -> coloca todos dentro do array da sala
+
+            console.log(salada)
         </script>
     </head>
     <body>
