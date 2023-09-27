@@ -3,6 +3,24 @@
         <title>Curso de EcmaScript 6.0</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
         <script type="text/babel">
+            // Declaração
+            let nome
+            nome = "José"
+            console.log(nome)
+
+
+            
+            // Hoisting -> Isto ocorre porque no JavaScript a função é hoisted
+            // ao topo do escopo, no caso, para o código global.
+            // afeta de forma diferente:
+            // Variáveis declaradas com: var, let ou const.
+            // funções declaradas usando function <nome> {...}
+            // classes declaradas usando class keyword
+            alert(somar(2,3))
+
+            function somar(a, b) {
+                return a + b
+            }
 
         </script>
     </head>
