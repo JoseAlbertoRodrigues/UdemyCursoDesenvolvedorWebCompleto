@@ -3,7 +3,7 @@
         <title>Curso de EcmaScript 6.0</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
         <script type="text/babel">
-        
+            
             var objeto = {
                 tipo: "Caneta",
                 cor: "Azul",
@@ -15,7 +15,7 @@
             console.log(objeto.preco)
 
             console.log("-------------------------")
-            var {tipo, cor, ...resto, tampas} = {
+            var {tipo, cor, marca, preco, tampas} = {
                 tipo: "Caneta",
                 cor: "Azul",
                 marca: "Bic",
@@ -25,12 +25,13 @@
 
             console.log(tipo)
             console.log(cor)
-            console.log(resto)
+            console.log(marca)
+            console.log(preco)
             console.log(tampas[1])
 
         </script>
     </head>
     <body>
-    
+
     </body>
 </html>
