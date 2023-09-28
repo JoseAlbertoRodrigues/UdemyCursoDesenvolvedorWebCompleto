@@ -5,8 +5,36 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser-polyfill.js"></script>
 
         <script type="text/babel">
-        
+            
+            function* gen() {
+                yield "uva",
+                yield "2",
+                yield "3"
+            }
 
+            var g = gen()
+
+            console.log(g.next())
+            console.log(g.next())
+            console.log(g.next())
+            console.log(g.next())
+
+            console.log("------------------------")
+
+            function* idCriador() {
+                var i = 0
+                while(true) {
+                    yield i++
+                }
+            }
+            
+            var generator = idCriador()
+
+            console.log(generator.next().value)
+            console.log(generator.next().value)
+            console.log(generator.next().value)
+            console.log(generator.next().value)
+            console.log(generator.next().value)
 
         </script>
     </head>
