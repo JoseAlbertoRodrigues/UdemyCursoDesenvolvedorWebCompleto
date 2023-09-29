@@ -4,5 +4,11 @@ Chave do Youtube
 https://console.cloud.google.com/apis/credentials?hl=pt-br&project=curso-youtube-api-v3-226202
 
 
-Chave de acesso do Youtube
-AIzaSyBXGnHShsVrqgKbpc3r6hoYNIZtM1cGTgs
+Chave de acesso do Youtube (key)
+AIzaSyBGKX-glXik7ogakKTCIPGWgctRv2qkPyI
+
+
+Channels -> list
+
+Solicitação HTTP
+GET https://www.googleapis.com/youtube/v3/channels
