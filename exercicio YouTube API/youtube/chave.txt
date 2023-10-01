@@ -12,3 +12,5 @@ Channels -> list
 
 Solicitação HTTP
 GET https://www.googleapis.com/youtube/v3/channels
+
+GET https://www.googleapis.com/youtube/v3/playlistItems
